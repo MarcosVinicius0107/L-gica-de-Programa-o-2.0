@@ -46,7 +46,31 @@ void loop()
   salarioAcrescido = salarioInicial + (salarioInicial * 0.10);
   
   //saída
-  Serial.println("O seu nome eh: " + String (nome) );
-  Serial.println("O seu salario acrescido eh: " + String (salarioAcrescido) );
-  delay(5000);//aguarda 5 segundos antes de rodar o loop novamente
-}
+  Serial.println();
+  Serial.println();
+  
+  Serial.println("Relatório");
+  Serial.println();
+  Serial.println("------------------------------");
+  Serial.println();
+  
+  Serial.println("Nome: " + nome);
+  Serial.println("Cargo: " + cargo);
+  Serial.println("Salario Inicial: " + String(salarioInicial) );
+  Serial.println("Salario Atualizado: " + String(salarioAcrescido));
+  Serial.println();
+  
+  Serial.print("------------------------------");
+  
+  Serial.println("Digite uma letra + <Enter> para continuar ...");//ajuste técnico para fazer o programa parar
+  while (! Serial.available() );
+  
+  Serial.println();
+  Serial.println();
+  
+  Serial.println();//limpa o cache do \n - o <Enter>
+  
+  
+  }
+  
+  
