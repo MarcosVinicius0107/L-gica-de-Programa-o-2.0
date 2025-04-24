@@ -13,6 +13,17 @@ void setup()
 
 void loop()
 {
+     
+  //Cabeçalho - 2 pipes + tracinho
+    Serial.println("|------------------------------|");
+    Serial.println("|                              |");
+    Serial.println("|    LOPAL - EX_05             |");        
+    Serial.println("|                              |");
+    Serial.println("|------------------------------|");
+  
+  Serial.println();//pula uma linha
+  Serial.println();//pula uma linha
+  
   //Entrada 
   Serial.println("Digite uma medida em centimetros");//pergunta uma medida em centímetros da escolha do usuário
   while(! Serial.available() );//espera o usuário digitar/dar um <Enter>

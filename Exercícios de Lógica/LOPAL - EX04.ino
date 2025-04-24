@@ -15,6 +15,17 @@ void setup()
 
 void loop()
 {
+     
+  //Cabeçalho - 2 pipes + tracinho
+    Serial.println("|------------------------------|");
+    Serial.println("|                              |");
+    Serial.println("|    LOPAL - EX_04             |");        
+    Serial.println("|                              |");
+    Serial.println("|------------------------------|");
+  
+  Serial.println();//pula uma linha
+  Serial.println();//pula uma linha
+  
   //Entrada 
   Serial.println("Digite seu nome");//pergunta o nome do usuário
   while(! Serial.available() );//espera o usuário digitar/dar um <Enter>
