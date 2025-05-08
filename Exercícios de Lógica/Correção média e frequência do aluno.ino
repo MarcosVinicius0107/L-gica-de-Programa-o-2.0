@@ -51,7 +51,13 @@ void loop()
   Serial.println ();
  
   
-   if(media > 6 && frequencia > 0.75)
+  if(media == 10)
+  {
+    Serial.println("Parabens Nota maxima");
+    Serial.println("A  sua media eh: " + String(media));
+    Serial.println("A sua frequencia eh: " + String(frequencia) + "%");
+  }
+  else if(media > 6 && frequencia > 0.75)
   {
   	Serial.println("APROVADO");
     Serial.println("A sua media eh: " + String(media));
@@ -81,12 +87,7 @@ void loop()
     Serial.println("A sua media eh: " + String(media));
     Serial.println("A sua frequencia eh: " + String(frequencia) + "%");
   }
-   else if(media == 10)
-  {
-    Serial.println("Parabens Nota maxima");
-    Serial.println("A  sua media eh: " + String(media));
-    Serial.println("A sua frequencia eh: " + String(frequencia) + "%");
-  }
+ 
   
   Serial.println();
   delay(5000);
